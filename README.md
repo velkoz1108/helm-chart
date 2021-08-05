@@ -1,6 +1,6 @@
 # helm-chart
 
-## helm的chart仓库地址为：https://yushanjin.github.io/helm-chart
+## helm的chart仓库地址为：https://velkoz1108.github.io/helm-chart
 
 ## 本Chart仓库的使用方法
 
