@@ -1,3 +1,5 @@
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/velkoz-helm-chart-repo)](https://artifacthub.io/packages/search?repo=velkoz-helm-chart-repo)
+
 ## 如何创建自己的chart仓库
 
 1. 创建一个自己的github仓库，如:`helm-chart`
