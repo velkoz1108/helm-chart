@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  demo-v3:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-09T05:19:38.104148764Z"
+    description: A Helm chart for Kubernetes
+    digest: fde5389796814ca2854278d7124a998676fe061fd9ff12ba19a1d8fa199c0e4a
+    name: demo-v3
+    type: application
+    urls:
+    - https://github.com/velkoz1108/helm-chart/releases/download/demo-v3-0.1.0/demo-v3-0.1.0.tgz
+    version: 0.1.0
   demo0809:
   - apiVersion: v2
     appVersion: 1.16.0
