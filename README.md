@@ -43,17 +43,31 @@ on:
 5. 在`gh-pages`分支添加`README.md`，增加一些本仓库的说明
 
 6. 在此仓库的设置页面，开启github-pages,代码分支选择`gh-pages`
-  - 通过[https://velkoz1108.github.io/helm-chart](https://<githubAccount>.github.io/<repoName>)可以访问到`README.md`中内容
+  - 配置完成后可以通过[https://<githubAccount>.github.io/<repoName>](https://velkoz1108.github.io/helm-chart)可以访问到`README.md`中内容
   - githubAccount指的是你的github用户名，如：velkoz1108
   - repoName指的你的仓库名，如：helm-chart
 
 ## 如何创建应用的chart并打包
 
-1. 首先在本地拉取此仓库`main`分支，`git clone https://github.com/velkoz1108/helm-chart.git` 
-2. 进入charts目录，`cd helm-chart/charts`
-3. 通过helm命令创建chart模板， `helm create my-app`
+1. 首先在本地拉取此仓库`main`分支，
+  ```shell
+  # git clone https://github.com/velkoz1108/helm-chart.git
+  ```
+2. 进入charts目录，
+  ```shell
+  # cd helm-chart/charts
+  ```
+3. 通过helm命令创建chart模板， 
+  ```shell
+  # helm create my-app
+  ```
 4. 按照需要修改模板
-5. 提交charts下的全部内容，`git add .`,`git commit -m 'add my-app'`,`git push`
+5. 提交charts下的全部内容，
+  ```shell
+  # git add .
+  # git commit -m 'add my-app'
+  # git push
+  ```
 6. 切换到`gh-pages`分支，检查下`index.yaml`的更新，发现已经自动给我们生成好了
 7. 通过`index.yaml`中的`urls`值来下载我们的chart的tgz包，解压后查看内容是否与我们修改的一致
 
@@ -73,9 +87,18 @@ on:
 ```
 
 ## 如何使用仓库的中的包
-1. 将自己的仓库添加到本地, `helm repo add myrepo https://velkoz1108.github.io/helm-chart`
-2. 更新仓库，`helm repo update`
-3. 安装`my-app`,`helm install my-app myrepo/my-app`
+1. 将自己的仓库添加到本地, 
+  ```shell
+  # helm repo add myrepo https://velkoz1108.github.io/helm-chart
+  ```
+2. 更新仓库，
+  ```
+  # helm repo update
+  ```
+3. 安装`my-app`,
+  ```
+  # helm install my-app myrepo/my-app
+  ```
 安装成功后会显示如下信息：
 ```shell
 NAME: my-app
