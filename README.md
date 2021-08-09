@@ -1,51 +1,20 @@
-# helm-chart
+## Usage
 
-## helm的chart仓库地址为：https://velkoz1108.github.io/helm-chart
+[Helm](https://helm.sh) must be installed to use the charts.  Please refer to
+Helm's [documentation](https://helm.sh/docs) to get started.
 
-## 本Chart仓库的使用方法
+Once Helm has been set up correctly, add the repo as follows:
 
-1、添加chart仓库
-```
-# helm repo add myrepo https://velkoz1108.github.io/helm-chart
-```
+  helm repo add myRepo https://velkoz1108.github.io/helm-chart
 
-2、添加成功
-```
-# helm repo list
-NAME  	URL                                   
-myrepo	https://velkoz1108.github.io/helm-chart
-```
+If you had already added this repo earlier, run `helm repo update` to retrieve
+the latest versions of the packages.  You can then run `helm search repo
+<alias>` to see the charts.
 
-3、搜索chart包
-```
-# helm search repo
-NAME                              	CHART VERSION	APP VERSION	DESCRIPTION                                   
-myrepo/test                       	0.1.0        	1.16.0     	A Helm chart for Kubernetes 
-```
+To install the <chart-name> chart:
 
-4、安装chart包
-```
-# helm install xxx myrepo/test
-```
+    helm install my-app myRepo/my-app
 
-5、创建新的chart模板
-```
-# helm create myapp
-```
+To uninstall the chart:
 
-6、打包
-```
-# helm package myapp --version 1.0.2
-```
-
-7、更新index.yaml
-```
-# helm repo index --url https://velkoz1108.github.io/helm-chart/ .
-```
-
-8、提交index.yaml和tgz包
-```
-# git add index.yaml myapp-1.0.2.tgz
-# git commit -m 'upload myapp-1.0.2 chart'
-# git push origin main
-```
+    helm delete my-app
