@@ -22,4 +22,15 @@ entries:
     urls:
     - https://github.com/velkoz1108/helm-chart/releases/download/demo-v4-0.1.0/demo-v4-0.1.0.tgz
     version: 0.1.0
+  my-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-09T05:59:43.971215302Z"
+    description: A Helm chart for Kubernetes
+    digest: 66d1ac2c3f68a8fe4646b5a19badd3cb255ba3542071c132804b5d6d1b1d354b
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/velkoz1108/helm-chart/releases/download/my-app-0.1.0/my-app-0.1.0.tgz
+    version: 0.1.0
 generated: "2021-08-09T10:51:22.463451+08:00"
