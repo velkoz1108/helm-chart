@@ -22,26 +22,4 @@ entries:
     urls:
     - https://github.com/velkoz1108/helm-chart/releases/download/demo-v4-0.1.0/demo-v4-0.1.0.tgz
     version: 0.1.0
-  demo0809:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-08-09T10:51:22.46405+08:00"
-    description: A Helm chart for Kubernetes
-    digest: c6a9700daea9d756a27a6b12146875dff06f9388d4192ea27ebd62690ddfd973
-    name: demo0809
-    type: application
-    urls:
-    - https://velkoz1108.github.io/helm-chart/demo0809-0.0.1.tgz
-    version: 0.0.1
-  test:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-08-09T10:51:22.465357+08:00"
-    description: A Helm chart for Kubernetes
-    digest: ce8ea703a38bdacfb7a5f16ab4995ebc5d9c4f7cfc486b4c3e3918df47fa7601
-    name: test
-    type: application
-    urls:
-    - https://velkoz1108.github.io/helm-chart/test-0.1.0.tgz
-    version: 0.1.0
 generated: "2021-08-09T10:51:22.463451+08:00"
