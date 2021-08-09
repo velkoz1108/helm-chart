@@ -141,6 +141,13 @@ NOTES信息来自`/charts/my-app/templates/NOTES.txt`,你可以自行修改
 {{- end }}
 ```
 
+## 如何将自己的仓库发布在官方的ArtifactHub上
+1. 登录[ArtifactHub](https://artifacthub.io/)
+2. 点击我的头像，进入`Control Panel`
+3. 进入Add，输入仓库地址和名称，名称如：`velkoz-helm-chart-repo`，地址如：`https://velkoz1108.github.io/helm-chart`
+4. 点击保存，稍等一会儿后就可以在首页搜索到自己的仓库了
+5. 点击仓库的右上角的三个点，点击`Get Badge`获取Badge,可以将仓库的badge添加到github中，这样README.md中有了一个ArtifactHub的徽章了，请看本文的第一行
+
 ### 其他的一些命令
 1. 添加成功
 ```
