@@ -43,7 +43,7 @@ on:
 5. 在`gh-pages`分支添加`README.md`，增加一些本仓库的说明
 
 6. 在此仓库的设置页面，开启github-pages,代码分支选择`gh-pages`
-  - 配置完成后可以通过[https://<githubAccount>.github.io/<repoName>](https://velkoz1108.github.io/helm-chart)可以访问到`README.md`中内容
+  - 配置完成后可以通过[https://\<githubAccount\>.github.io/\<repoName\>](https://velkoz1108.github.io/helm-chart)可以访问到`README.md`中内容
   - githubAccount指的是你的github用户名，如：velkoz1108
   - repoName指的你的仓库名，如：helm-chart
 
